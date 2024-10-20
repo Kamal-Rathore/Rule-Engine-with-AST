@@ -50,11 +50,13 @@ Set up MySQL database (if not using Docker or Podman).
 # Database Setup
 # Using Docker or Podman
 To run your MySQL database in a Docker or Podman container:
+
 docker run --name mysql-container -e MYSQL_ROOT_PASSWORD=123456 -e MYSQL_DATABASE=rule_engine_db -p 3306:3306 -d mysql:latest
 # Manual Setup
 Access MySQL Workbench or use command line.
 # Create a new database:
 - CREATE DATABASE rule_engine_db;
+  
 Create the necessary table for storing rules:
 
 CREATE TABLE rules (
@@ -72,6 +74,7 @@ CREATE TABLE rules (
 - Enter multiple rules, one per line, in the provided text area.
 - Select the operator to combine rules (AND/OR).
 - Click the Combine Rules button.
+  
 The combined AST will be displayed.
 # Evaluating Rules
 - Enter user data in JSON format (e.g., {"age": 35, "department": "Sales", "salary": 60000}).
@@ -85,6 +88,7 @@ To see the data stored in your database:
 - Select the rule_engine_db database.
 # Run the query:
 - SELECT * FROM rules;
+  
 This will display all the stored rules.
 # Using the SQL Dump File
 To restore or share your database using the .sql file you created:
@@ -96,6 +100,7 @@ To restore or share your database using the .sql file you created:
 - Select the .sql file you created (e.g., Dump20241020.sql).
 - Choose the target database (or create a new one).
 - Click Start Import.
+  
 This will execute all commands in the .sql file, creating the tables and inserting the data.
 
 # Conclusion
