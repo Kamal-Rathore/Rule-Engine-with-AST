@@ -4,7 +4,7 @@
 streamlit==1.18.1
 
 # Altair: A declarative statistical visualization library
-altair==5.4.1
+altair>=5.0.0  # Change to a stable version if needed
 
 # mysql-connector-python: MySQL driver to connect and interact with MySQL databases
 mysql-connector-python==8.0.33
