@@ -1,10 +1,13 @@
 # Required packages for the Rule Engine with AST application
 
 # Streamlit: A framework to create web applications easily
-streamlit==1.18.1
-
-# Altair: A declarative statistical visualization library
-altair>=5.0.0  # Change to a stable version if needed
+streamlit==1.39.0
 
 # mysql-connector-python: MySQL driver to connect and interact with MySQL databases
 mysql-connector-python==8.0.33
+
+# json: (Standard Library) Used for parsing JSON data.
+# No need to include in requirements.txt as it's part of Python's standard library.
+
+#also need of altair
+altair==5.4.1
