@@ -37,6 +37,7 @@ cd Rule-Engine-with-AST
 # Install necessary libraries:
 
 pip install -r requirements.txt
+
 Set up MySQL database (if not using Docker or Podman).
 
 # Running the Application
